@@ -30,20 +30,20 @@ AFRAME.registerComponent("listener", {
         angel_1.setAttribute("rotation", "270 270 90");
         angel_1.setAttribute("position", pos);
         time_angel_1++;
-        if (time_angel_1 == 2) {
-          //   make angel bigger
-          angel_1.setAttribute("scale", "0.018 0.018 0.018");
-          angel_1.setAttribute(
-            "material",
-            "color: #555555; metalness:.1; roughness:1"
-          );
-          document.getElementsByTagName("a-scene")[0].style.opacity = "0";
-          var scare_sound = document.getElementById("scare_sound");
-          scare_sound.components.sound.playSound();
-        }
       }
     } else {
       angel_1_in_view = true;
+      if (time_angel_1 == 2) {
+        //   make angel bigger
+        angel_1.setAttribute("scale", "0.018 0.018 0.018");
+        angel_1.setAttribute(
+          "material",
+          "color: #555555; metalness:.1; roughness:1"
+        );
+        document.getElementsByTagName("a-scene")[0].style.opacity = "0";
+        var scare_sound = document.getElementById("scare_sound");
+        scare_sound.components.sound.playSound();
+      }
     }
     if (rotation < 120 || rotation > 240) {
       if (angel_2_in_view == true) {
@@ -51,17 +51,17 @@ AFRAME.registerComponent("listener", {
         var pos = angel_2_position.shift();
         angel_2.setAttribute("position", pos);
         time_angel_2++;
-        if (time_angel_2 == 2) {
-          angel_2.setAttribute("scale", "0.018 0.018 0.018");
-          angel_2.setAttribute(
-            "material",
-            "color: #555555; metalness:.1; roughness:1"
-          );
-          document.getElementsByTagName("a-scene")[0].style.opacity = "0";
-        }
       }
     } else {
       angel_2_in_view = true;
+      if (time_angel_2 == 2) {
+        angel_2.setAttribute("scale", "0.018 0.018 0.018");
+        angel_2.setAttribute(
+          "material",
+          "color: #555555; metalness:.1; roughness:1"
+        );
+        document.getElementsByTagName("a-scene")[0].style.opacity = "0";
+      }
     }
   }
 });
