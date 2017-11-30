@@ -43,6 +43,7 @@
   <script src="js/ctm_component.js"></script>
   <script src="js/mobile_component.js"></script>
 
+
 </head>
 
 <body>
@@ -72,7 +73,7 @@
 
   <!--<a-scene stats>-->
 
-  <a-scene>
+  <a-scene id="main">
 
     <a-entity mobile></a-entity>
 
@@ -329,26 +330,26 @@
       data-aframe-default-camera></a-entity>
 
     <a-sound src=": url(DeadSilenceSoundtrack.mp3); autoplay: true" autoplay="true" position="0 2 5"></a-sound>
-  </a-scene>
+    <a-sound id="scare_sound" src=": url(scare.mp3); autoplay: false" autoplay="false" position="0 2 5"></a-sound>
 
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-92113119-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+      ga('create', 'UA-92113119-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
 
 </body>
