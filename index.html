@@ -250,19 +250,15 @@
     <a-entity obj-model="obj: #moonlight-obj;" material="src: #moonlight-texture"></a-entity>
     <a-entity obj-model="obj: #podiums-obj;" material="src: #podiums-texture"></a-entity>
     <a-entity obj-model="obj: #lamps-obj;" material="src: #lamps-texture; side: double;"></a-entity>
-<<<<<<< HEAD
 
-    <a-entity id="angel_1" obj-model="obj: #angel-obj; mtl: #angel-mtl" rotation="270 0 90" scale="0.01 0.01 0.01"></a-entity>
+    <!-- weeping angels -->
 
-=======
-      
-    <!-- weeping angels -->  
-      
-    <a-entity obj-model="obj: #angel-obj;" material="color: #71787d; metalness:.1; roughness:1" rotation="270 180 90" scale="0.013 0.013 0.013" position="2.6 .6 -12.4" shadow="receive: false"></a-entity>
-      
-    <a-entity obj-model="obj: #angel-obj;" material="color:#a1a1a1; metalness:.1; roughness:1" rotation="270 90 90" scale="0.013 0.013 0.013" position=".5 0 10" shadow="receive: false"></a-entity>
-      
->>>>>>> c003e7dbdbcb8df0eeab0ff2024e28b978279cac
+    <a-entity id="angel_1" obj-model="obj: #angel-obj;" material="color: #71787d; metalness:.1; roughness:1" rotation="270 180 90"
+      scale="0.013 0.013 0.013" position="2.6 .6 -12.4" shadow="receive: false"></a-entity>
+
+    <a-entity id="angel_2" obj-model="obj: #angel-obj;" material="color:#a1a1a1; metalness:.1; roughness:1" rotation="270 90 90"
+      scale="0.013 0.013 0.013" position=".5 0 10" shadow="receive: false"></a-entity>
+
     <!-- <a-entity obj-model="obj: #david-obj;" material="src: #david-texture"></a-entity> -->
     <!-- <a-entity ctm="src: #david-ctm; name:david;"></a-entity> -->
 
@@ -329,8 +325,10 @@
 
     <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="left"></a-entity>
     <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="right"></a-entity>
-    <a-entity listener camera="active: true; userHeight: 1" look-controls wasd-controls position="1 1 1" data-aframe-default-camera></a-entity>
+    <a-entity listener position="0 1 -4.5" camera="active: true; userHeight: 1" look-controls wasd-controls position="1 1 1"
+      data-aframe-default-camera></a-entity>
 
+    <a-sound src=": url(DeadSilenceSoundtrack.mp3); autoplay: true" autoplay="true" position="0 2 5"></a-sound>
   </a-scene>
 
   <script src="main.js"></script>
