@@ -76,7 +76,7 @@
 
     <a-entity mobile></a-entity>
 
-    <a-entity light="type: directional; color: #FFF; intensity: 0.5" position="2 20 0"></a-entity>
+    <a-entity light="type: directional; castShadow:true; color: #FFF; intensity: 0.5" position="2 20 0"></a-entity>
     <a-entity light="type: ambient; color: #FFF"></a-entity>
 
     <!-- Custom components with animations -->
@@ -250,9 +250,19 @@
     <a-entity obj-model="obj: #moonlight-obj;" material="src: #moonlight-texture"></a-entity>
     <a-entity obj-model="obj: #podiums-obj;" material="src: #podiums-texture"></a-entity>
     <a-entity obj-model="obj: #lamps-obj;" material="src: #lamps-texture; side: double;"></a-entity>
+<<<<<<< HEAD
 
     <a-entity id="angel_1" obj-model="obj: #angel-obj; mtl: #angel-mtl" rotation="270 0 90" scale="0.01 0.01 0.01"></a-entity>
 
+=======
+      
+    <!-- weeping angels -->  
+      
+    <a-entity obj-model="obj: #angel-obj;" material="color: #71787d; metalness:.1; roughness:1" rotation="270 180 90" scale="0.013 0.013 0.013" position="2.6 .6 -12.4" shadow="receive: false"></a-entity>
+      
+    <a-entity obj-model="obj: #angel-obj;" material="color:#a1a1a1; metalness:.1; roughness:1" rotation="270 90 90" scale="0.013 0.013 0.013" position=".5 0 10" shadow="receive: false"></a-entity>
+      
+>>>>>>> c003e7dbdbcb8df0eeab0ff2024e28b978279cac
     <!-- <a-entity obj-model="obj: #david-obj;" material="src: #david-texture"></a-entity> -->
     <!-- <a-entity ctm="src: #david-ctm; name:david;"></a-entity> -->
 
