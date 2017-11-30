@@ -80,20 +80,9 @@
     <a-entity light="type: directional; castShadow:true; color: #FFF; intensity: 0.5" position="2 20 0"></a-entity>
     <a-entity light="type: ambient; color: #FFF"></a-entity>
 
-    <!-- Custom components with animations -->
-    <a-entity spheres material="shader: envMapMaterial; src:textures/cube/hall/; "></a-entity>
-    <a-entity anim_1></a-entity>
-    <a-entity anim_2></a-entity>
-
     <!-- - Custom components with animations -->
 
     <a-assets>
-      <a-mixin id="checkpoint"></a-mixin>
-      <a-mixin id="checkpoint-hovered" color="#6CEEB5"></a-mixin>
-
-
-      <img id="sky_sphere-texture" src="textures/sky_sphere.jpg">
-
       <a-sound src="audio/84529__cmusounddesign__02-museum.ogg" autoplay="true" loop="true" position="1 1 0"></a-sound>
 
       <a-sound src="audio/219462__cediez__musee-victoria-londres-grand-escalier.ogg" autoplay="true" loop="true" position="1 1 10"></a-sound>
@@ -113,20 +102,11 @@
 
       <!-- hall low floor -->
       <!-- this piece is only meant for teleportation -->
-      <a-asset-item id="hall_low_floor-obj" src="models/hall_low_floor.obj"></a-asset-item>
 
       <!-- - hall low floor-->
 
-      <!-- acropolis -->
-      <a-asset-item id="acropolis-obj" src="models/acropolis.obj"></a-asset-item>
-      <img id="acropolis-texture" src="textures/acropolis.jpg">
-      <!-- - acropolis -->
-
-      <!-- castle_lake -->
-      <a-asset-item id="castle_lake-obj" src="models/castle_lake.obj"></a-asset-item>
-      <img id="castle_lake-texture" src="textures/castle_lake.jpg">
-      <!-- - castle_lake -->
-
+     
+     
       <!-- good_samaritan -->
       <a-asset-item id="good_samaritan-obj" src="models/good_samaritan.obj"></a-asset-item>
       <img id="good_samaritan-texture" src="textures/good_samaritan.jpg">
@@ -213,30 +193,6 @@
       <!--<img id="monk_uv-texture" src="textures/monk_uv.jpg">-->
       <!-- - monk_uv -->
 
-      <!-- david_bike_hall_3 -->
-      <!--<a-asset-item id="david_bike_hall_3-obj" src="models/david_bike_hall_3.obj"></a-asset-item>-->
-      <a-asset-item id="david_bike_hall_3-ctm" src="models/david_bike_hall_3.ctm"></a-asset-item>
-      <!--<img id="david_bike_hall_3-texture" src="textures/david_bike_hall_3.jpg">-->
-      <!-- - david_bike_hall_3 -->
-
-
-      <!-- mocaps -->
-      <a-asset-item id="am_threejs_CEC_BODY_1_HEAD-mocap" src="js/mocap/am_threejs_CEC_BODY_1_HEAD.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_1_LEFT-mocap" src="js/mocap/am_threejs_CEC_BODY_1_LEFT.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_1_RIGHT-mocap" src="js/mocap/am_threejs_CEC_BODY_1_RIGHT.js"></a-asset-item>
-
-      <a-asset-item id="am_threejs_CEC_BODY_2_HEAD-mocap" src="js/mocap/am_threejs_CEC_BODY_2_HEAD.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_2_LEFT-mocap" src="js/mocap/am_threejs_CEC_BODY_2_LEFT.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_2_RIGHT-mocap" src="js/mocap/am_threejs_CEC_BODY_2_RIGHT.js"></a-asset-item>
-
-      <a-asset-item id="am_threejs_CEC_BODY_3_HEAD-mocap" src="js/mocap/am_threejs_CEC_BODY_3_HEAD.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_3_LEFT-mocap" src="js/mocap/am_threejs_CEC_BODY_3_LEFT.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_3_RIGHT-mocap" src="js/mocap/am_threejs_CEC_BODY_3_RIGHT.js"></a-asset-item>
-
-      <a-asset-item id="am_threejs_CEC_BODY_4_HEAD-mocap" src="js/mocap/am_threejs_CEC_BODY_4_HEAD.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_4_LEFT-mocap" src="js/mocap/am_threejs_CEC_BODY_4_LEFT.js"></a-asset-item>
-      <a-asset-item id="am_threejs_CEC_BODY_4_RIGHT-mocap" src="js/mocap/am_threejs_CEC_BODY_4_RIGHT.js"></a-asset-item>
-      <!-- - mocaps -->
 
     </a-assets>
 
@@ -294,38 +250,7 @@
     <a-entity ctm="src: #monk_uv-ctm; name:monk_uv;"></a-entity>
 
     <!--<a-entity obj-model="obj: #david_bike_hall_3-obj;" material="src: #david_bike_hall_3-texture"></a-entity>-->
-    <a-entity ctm="src: #david_bike_hall_3-ctm; name:david_bike_hall_3;"></a-entity>
 
-    <a-entity mocap="head: #am_threejs_CEC_BODY_1_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_1_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_1_RIGHT-mocap;
-                       totalFrames:645;
-                       torsoPosition: 0 -0.4 0.05" position=" -3 1 6.5" rotation="0 -90 0">
-    </a-entity>
-
-    <a-entity mocap="head: #am_threejs_CEC_BODY_2_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_2_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_2_RIGHT-mocap;
-                       totalFrames:626;
-                       torsoPosition: 0.0 -0.4 0.05" position=" -3 1 9.2" rotation="0 -90 0">
-    </a-entity>
-
-    <a-entity mocap="head: #am_threejs_CEC_BODY_3_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_3_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_3_RIGHT-mocap;
-                       totalFrames:600;
-                       torsoPosition: 0 -0.4 0.05" position=" -3 1 12.2" rotation="0 -90 0">
-    </a-entity>
-
-    <a-entity mocap="head: #am_threejs_CEC_BODY_4_HEAD-mocap;
-                       left: #am_threejs_CEC_BODY_4_LEFT-mocap;
-                       right: #am_threejs_CEC_BODY_4_RIGHT-mocap;
-                       totalFrames:7050;
-                       torsoPosition: -0.05 -0.4 0.0" ; position=" -3 1 4" rotation="0 0 0">
-    </a-entity>
-
-    <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="left"></a-entity>
-    <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="right"></a-entity>
     <a-entity listener position="0 1 -4.5" camera="active: true; userHeight: 1" look-controls wasd-controls position="1 1 1"
       data-aframe-default-camera></a-entity>
 
