@@ -251,7 +251,7 @@
     <a-entity obj-model="obj: #podiums-obj;" material="src: #podiums-texture"></a-entity>
     <a-entity obj-model="obj: #lamps-obj;" material="src: #lamps-texture; side: double;"></a-entity>
 
-    <a-entity obj-model="obj: #angel-obj; mtl: #angel-mtl" rotation="270 0 90" scale="0.01 0.01 0.01"></a-entity>
+    <a-entity id="angel_1" obj-model="obj: #angel-obj; mtl: #angel-mtl" rotation="270 0 90" scale="0.01 0.01 0.01"></a-entity>
 
     <!-- <a-entity obj-model="obj: #david-obj;" material="src: #david-texture"></a-entity> -->
     <!-- <a-entity ctm="src: #david-ctm; name:david;"></a-entity> -->
@@ -319,6 +319,7 @@
 
     <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="left"></a-entity>
     <a-entity teleport-controls="button: trigger; collision-entities: #floor #hall_low_floor" hand-controls="right"></a-entity>
+    <a-entity listener camera="active: true; userHeight: 1" look-controls wasd-controls position="1 1 1" data-aframe-default-camera></a-entity>
 
   </a-scene>
 
@@ -340,6 +341,7 @@
     ga('create', 'UA-92113119-1', 'auto');
     ga('send', 'pageview');
   </script>
+
 
 </body>
 
